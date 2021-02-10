@@ -1,0 +1,82 @@
+!$np = 16; 
+!$ip = 2;
+!for($ip=2; $ip <= $np; $ip=$ip+1)
+!{
+
+USER SURFACE: f$ip
+  Apply Instancing Transform = On
+  Apply Rotation = On
+  Apply Scale = On
+  Apply Texture = Off
+  Apply Translation = Off
+  Associated Boundary = inlet
+  Associated Boundary Specified = On
+  Blend Texture = On
+  Colour = 0.75, 0.75, 0.75
+  Colour Map = Default Colour Map
+  Colour Mode = Constant
+  Colour Scale = Linear
+  Colour Variable = Pressure
+  Colour Variable Boundary Values = Conservative
+  Contour Level = 1
+  Culling Mode = No Culling
+  Domain List = /DOMAIN GROUP:All Domains
+  Draw Faces = On
+  Draw Lines = Off
+  File Units = mm
+  Input File = E:/000_KATECH_Motor/210208_Mesh_opt/210210_extracted_ASCII/f-($ip).stl
+  Instancing Transform = /DEFAULT INSTANCE TRANSFORM:Default Transform
+  Lighting = On
+  Line Colour = 0, 0, 0
+  Line Colour Mode = Default
+  Line Width = 1
+  Maintain Conservative Values = Off
+  Max = 0.0 [Pa]
+  Min = 0.0 [Pa]
+  Offset Direction = 1 , 0 , 0
+  Offset Distance = 0.0 [m]
+  Offset Mode = Uniform
+  Offset Type = Normal
+  Option = From STL File
+  Principal Axis = Z
+  Range = Global
+  Render Edge Angle = 0 [degree]
+  Rotation Angle = 0 [degree]
+  Rotation Axis From = 0 [m], 0 [m], 0 [m]
+  Rotation Axis To = 1 [m], 0 [m], 0 [m]
+  Rotation Axis Type = Principal Axis
+  Scale Factor = 1.0
+  Specular Lighting = On
+  Surface Drawing = Smooth Shading
+  Texture Angle = 0
+  Texture Direction = 0 , 1 , 0
+  Texture File = 
+  Texture Material = Metal
+  Texture Position = 0 , 0
+  Texture Scale = 1
+  Texture Type = Predefined
+  Tile Texture = Off
+  Transform Texture = Off
+  Translation Vector = 0 [m], 0 [m], 0 [m]
+  Transparency = 0.0
+  Use Mid Side Nodes = On
+  Visibility = On
+  OBJECT VIEW TRANSFORM: 
+    Apply Reflection = Off
+    Apply Rotation = On
+    Apply Scale = On
+    Apply Translation = Off
+    Principal Axis = Z
+    Reflection Plane Option = XY Plane
+    Rotation Angle = 0 [degree]
+    Rotation Axis From = 0 [m], 0 [m], 0 [m]
+    Rotation Axis To = 1 [m], 0 [m], 0 [m]
+    Rotation Axis Type = Principal Axis
+    Scale Vector = 1 , 1 , 1
+    Translation Vector = 0 [m], 0 [m], 0 [m]
+    X = 0.0 [m]
+    Y = 0.0 [m]
+    Z = 0.0 [m]
+  END
+END
+!}
